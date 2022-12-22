@@ -16,6 +16,7 @@ class ViewController: UITableViewController {
     //MARK: - Properties
     private var coins = [coinModel](){
         didSet{
+            //whenever stting it reload data
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
